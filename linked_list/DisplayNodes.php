@@ -1,9 +1,9 @@
 <?php
 include_once './AutoLoaded.php';
 
-class DisplayNodes implements LinkedListInterFace
+class DisplayNodes implements Displayer
 {
-    public static function DisplayNodes(LinkedList $LinkedList, $par = null)
+    public static function DisplayNodes(LinkedList $LinkedList)
     {
         $ptr = $LinkedList->head;
         while ($ptr->next != null) {
@@ -18,16 +18,5 @@ class DisplayNodes implements LinkedListInterFace
             echo "<br>its null";
         }
     }
-    public static function insertNode(LinkedList $LinkedList, Node $NewNode)
-    {
-        #DO NOTHNG!
-    }
-
-    public static function DeleteNode(LinkedList $LinkedList, $value)
-    {
-        #DO NOTHNG!
-
-    }
-
 }
 ?>

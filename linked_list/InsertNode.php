@@ -1,9 +1,9 @@
 <?php
 include_once './AutoLoaded.php';
 
-class InsertNode implements LinkedListInterFace
+class InsertNode implements Inserter
 {
-    public static function insertNode(LinkedList $LinkedList, Node $NewNode)
+    public static function InsertNode(LinkedList $LinkedList, Node $NewNode)
     {
         $ptr_to_list = $LinkedList->head;
 
@@ -18,18 +18,6 @@ class InsertNode implements LinkedListInterFace
         $ptr_to_list->next = $NewNode;
         return $LinkedList;
     }
-
-    public static function DisplayNodes(LinkedList $LinkedList)
-    {
-        #DO NOTHNG!
-    }
-    public static function DeleteNode(LinkedList $LinkedList, $value)
-    {
-        #DO NOTHNG!
-
-    }
-
-
 }
 
 

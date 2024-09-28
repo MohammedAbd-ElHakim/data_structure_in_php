@@ -13,16 +13,19 @@ class LinkedList
 $n = new Node('3');
 $list = new LinkedList($n);
 $s = new Node("4");
-$new_list = InsertNode::insertNode($list, NewNode: $s);
+$new_list = InsertNode::InsertNode($list, NewNode: $s);
 $a = new Node('7');
-$new_list2 = InsertNode::insertNode($list, NewNode: $a);
-$a2 = new Node('8');
-$new_list2 = InsertNode::insertNode($list, NewNode: $a2);
+$new_list2 = InsertNode::InsertNode($list, NewNode: $a);
+$a2 = new Node(data: '8');
+$new_list2 = InsertNode::InsertNode($list, NewNode: $a2);
 
-LinkedListInterFace::DisplayNodes($new_list2);
+DisplayNodes::DisplayNodes($new_list2);
 echo "<br> now we will delete 8";
-$new_list3 = LinkedListInterFace::DeleteNode($new_list2, '8');
-LinkedListInterFace::DisplayNodes($new_list3);
+$new_list3 = DeleteNode::DeleteNode($new_list2, '8');
+DisplayNodes::DisplayNodes($new_list3);
+
+
+
 
 
 

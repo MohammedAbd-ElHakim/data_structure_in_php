@@ -1,7 +1,7 @@
 <?php
 include_once './AutoLoaded.php';
 
-class DeleteNode implements LinkedListInterFace
+class DeleteNode implements Deleter
 {
     public static function DeleteNode(LinkedList $LinkedList, $value)
     {
@@ -29,15 +29,6 @@ class DeleteNode implements LinkedListInterFace
             return $LinkedList;
 
         }
-    }
-
-    public static function DisplayNodes(LinkedList $LinkedList)
-    {
-        #DO NOTHNG!
-    }
-    public static function insertNode(LinkedList $LinkedList, Node $NewNode)
-    {
-        #DO NOTHNG!
     }
 }
 ?>
