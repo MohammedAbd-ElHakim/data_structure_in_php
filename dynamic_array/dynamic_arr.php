@@ -4,7 +4,10 @@ class Dynamic_array
     public $data = array();
     public $size;
 
+<<<<<<< HEAD
     // this is cunstructor
+=======
+>>>>>>> 93b33fe6fe20081c6b0b553cd11970f92ecb409d
     public function Dynamic_array()
     {
         $this->size = 0;
@@ -12,7 +15,11 @@ class Dynamic_array
         $this->data = array_fill(0, 1, null);
     }
 
+<<<<<<< HEAD
     //فحص طول المصفوفه ان كانت تحتمل اي عنصر او اي منتج اضافه
+=======
+    //فحص كول المصفوفه ان كانت تحتمل اي عنصر او اي منتج اضافه
+>>>>>>> 93b33fe6fe20081c6b0b553cd11970f92ecb409d
     private function check_the_size_of_array($check_size)
     {
         $current_size = sizeof($this->data);
@@ -40,6 +47,7 @@ class Dynamic_array
         $orginal_array = $this->data;
         foreach ($orginal_array as $key => $data) {
             # code...
+<<<<<<< HEAD
             // $found = false;
             if ($data != $item) {
                 // $found = true;
@@ -49,6 +57,18 @@ class Dynamic_array
             // if ($found) {
             $this->data = $new_arr;
             // }
+=======
+            $found = false;
+            if ($data != $item) {
+                $found = true;
+                $new_arr[] = $data;
+            }
+
+            if ($found) {
+                $this->data = $new_arr;
+
+            }
+>>>>>>> 93b33fe6fe20081c6b0b553cd11970f92ecb409d
         }
     }
 
