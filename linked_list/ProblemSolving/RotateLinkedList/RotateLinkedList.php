@@ -57,10 +57,6 @@ class RotateLinkedList
         $list->head = $newTail->next;
         $newTail->next = null;
         return $list;
-
-
     }
-
-
 }
 ?>
