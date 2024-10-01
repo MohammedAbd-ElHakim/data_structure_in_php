@@ -56,9 +56,6 @@ class PrintNthNodeFromTheEndOfALinkedList
             return -1;
         }
 
-        echo "<br> k : " . $k;
-        echo "<br> size : " . $size;
-
         $curr = $list->head;
         for ($i = 0; $i < $move; $i++) {
             # code...
