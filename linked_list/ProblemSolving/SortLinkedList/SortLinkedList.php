@@ -1,7 +1,7 @@
 <?php
 include_once './AutoLoaded.php';
 
-class SortedLinkedList implements SortedLinkedListInterFace
+class SortLinkedList implements SortedLinkedListInterFace
 {
 
     public static function sort(LinkedList $list)

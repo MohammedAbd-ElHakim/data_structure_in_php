@@ -5,6 +5,9 @@ class DeleteNode implements Deleter
 {
     public static function DeleteNode(LinkedList $LinkedList, $value)
     {
+        if ($LinkedList == null) {
+            return $LinkedList;
+        }
         $curr = $LinkedList->head;
         $prev = $curr;
         if ($curr->data == $value) {
